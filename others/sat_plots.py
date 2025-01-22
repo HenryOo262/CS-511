@@ -1,5 +1,6 @@
 from matplotlib import pyplot as plt
 import pandas as p
+import numpy as np
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -12,6 +13,7 @@ print(df)
 
 # sns.scatterplot(data=df, x='SAT', y='GPA')
 sns.regplot(data=df, x='SAT', y='GPA')
+# sns.histplot(data=df['SAT'])
 plt.show()
 
 plt.scatter(df['SAT'], df['GPA'])
