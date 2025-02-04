@@ -12,6 +12,9 @@ print(df)
 x = df.iloc[:, :1]
 y = df.iloc[:, 1:]
 
+sns.regplot(df, x='YearsExperience', y='Salary', color='b')
+plt.show()
+
 # split data 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=0)
 
